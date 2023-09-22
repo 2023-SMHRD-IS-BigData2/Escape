@@ -3,13 +3,13 @@ package View;
 import java.util.Scanner;
 
 import Controller.GameFlow;
-import Controller.userDB;
+import Controller.userLogin;
 import Model.MusicPlayer;
 
 public class Game_main {
 
 	public static void main(String[] args) {
-		userDB ud = new userDB();
+		userLogin ud = new userLogin();
 		// 로그인 회원가입
 		PwOfEscape pe = new PwOfEscape();
 		StartChoice gs = new StartChoice();

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import Model.ModelDAO;
 import Model.ModelDTO;
 
-public class userDB {
+public class userLogin {
 	
 	Scanner sc = new Scanner(System.in);
 	ModelDAO mdao = new ModelDAO();
