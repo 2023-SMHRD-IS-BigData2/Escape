@@ -10,12 +10,12 @@ public class Game_main {
 
 	public static void main(String[] args) {
 		userLogin ud = new userLogin();
-		// 로그인 회원가입
 		PwOfEscape pe = new PwOfEscape();
 		StartChoice gs = new StartChoice();
 		GameFlow gf = new GameFlow();
 		Scanner scan = new Scanner(System.in);
 		MusicPlayer stop = null;
+		
 		// 게임 소개 화면 - 게임 로고 뿌리기 + bgm(선택사항)
 
 		// 회원가입, 로그인

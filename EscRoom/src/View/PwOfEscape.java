@@ -14,4 +14,21 @@ public class PwOfEscape {
 		}
 
 	}
+
+	public int getD() {
+		return D;
+	}
+
+	public void setD(int d) {
+		this.D = d;
+	}
+
+	public int[] getPw() {
+		return pw;
+	}
+
+	public void setPw(int[] pw) {
+		this.pw = pw;
+	}
+	
 }
