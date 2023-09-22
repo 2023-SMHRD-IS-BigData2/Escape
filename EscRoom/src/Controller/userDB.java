@@ -26,11 +26,12 @@ public class userDB {
 			String inpPw = sc.next();
 
 			if (mdao.getlog(inpID, inpPw)==true) {
-				System.out.println(inpID + "로그인 완료했습니다!");
+				System.out.println(inpID + "님 로그인 완료했습니다!");
+				break;
 			} // if
 			else {
 				System.out.println("로그인 실패하셨습니다!");
-			}break;
+			}
 
 		} else if (num == 2) {
 			System.out.print("아이디를 입력해 주세요 >> ");
