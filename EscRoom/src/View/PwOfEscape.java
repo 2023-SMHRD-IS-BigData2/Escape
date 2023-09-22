@@ -1,4 +1,4 @@
-package Controller;
+package View;
 
 import java.util.Random;
 
@@ -14,5 +14,4 @@ public class PwOfEscape {
 		}
 
 	}
-
 }
