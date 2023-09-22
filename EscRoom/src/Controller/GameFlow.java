@@ -3,6 +3,7 @@ package Controller;
 import java.util.Scanner;
 
 public class GameFlow {
+	QuizChoice qc = new QuizChoice();
 	public int mode;
 	int roomHint;
 	Scanner scan = new Scanner(System.in);
@@ -31,13 +32,15 @@ public class GameFlow {
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		
 		System.out.println("멘트"); //
+		
 		System.out.println("두번째 방");
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구3");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
 	}
 
 	public void nomalMode() {
@@ -49,21 +52,23 @@ public class GameFlow {
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint);
 		System.out.println("멘트"); //
 		
 		System.out.println("두번째 방");
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구3");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint);
+		
 		System.out.println("멘트");
 		
 		System.out.println("세번째 방");
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구3 [4]가구4");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint);
+
 	}
 
 	public void hardMode() {
@@ -75,21 +80,23 @@ public class GameFlow {
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구 [4]가구4 [5]가구5");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint);
+		
 		System.out.println("멘트"); //
 		
 		System.out.println("두번째 방");
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구3 [4]가구4 [5]가구5");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint);
+		
 		System.out.println("멘트");
 		
 		System.out.println("세번째 방");
 		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		System.out.println("[1]가구1 [2]가구2 [3]가구3 [4]가구4 [5]가구5");
 		roomHint = scan.nextInt();
-//		QuizChoice(roomHint); // 스토리에 따른 퀴즈 나오고 게임 진행 메소드
+		qc.Quiz(roomHint);
 
 	}
 

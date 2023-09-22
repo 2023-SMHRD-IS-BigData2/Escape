@@ -2,14 +2,14 @@ package View;
 
 import java.util.Scanner;
 
-import Controller.GameFlow;
-import Controller.userDB;
-import Model.MusicPlayer;
+import src.Controller.GameFlow;
+import src.Controller.userLogin;
+import src.Model.MusicPlayer;
 
 public class Game_main {
 
 	public static void main(String[] args) {
-		userDB ud = new userDB();
+		userLogin ud = new userLogin();
 		// 로그인 회원가입
 		PwOfEscape pe = new PwOfEscape();
 		StartChoice gs = new StartChoice();
@@ -33,8 +33,12 @@ public class Game_main {
 		if (ch == 1) {
 			pe.D = 4; // 난이도에 따른 비밀번호 자릿 수 선택
 			gf.mode = 1; //난이도 선택에 따라 진행되는 게임 메소드용
+<<<<<<< HEAD
 			easyPlay();
 			stop.stop();
+=======
+//			stop.stop();
+>>>>>>> branch 'master' of https://github.com/2023-SMHRD-IS-BigData2/Mini_Project_Team2
 		} else if (ch == 2) {
 			pe.D = 6;
 			gf.mode = 2;

@@ -22,7 +22,7 @@ public class StartChoice {
 		ment = new String[] { "다시 기회 준다", "다시 눌러", "그냥 내맘대로 한다." };
 		playlist.add(new MusicVO("시작브금", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\방탈출BGM.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
-
+		
 		if (choice.equals("Y") || choice.equals("y")) {
 			opening();
 			bgm.play(0);
@@ -36,9 +36,13 @@ public class StartChoice {
 			} else {
 				opening();
 				MusicVO currentMusic = bgm.play(0);
-				bgm.stop(); } // if else if end
+				bgm.stop();
+			} // if else if end
+		} else {
+			System.out.println("잘못입력되었네요.");
 		}
-		}
+		
+	}
 
 	public void opening() {
 		String start = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@################################################@@@@@@@@@@@@@@@@@@@@@@@@\r\n"
