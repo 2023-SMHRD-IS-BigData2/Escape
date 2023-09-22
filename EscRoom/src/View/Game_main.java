@@ -3,7 +3,6 @@ package View;
 import java.util.Scanner;
 
 import Controller.GameFlow;
-import Controller.PwOfEscape;
 import Controller.userLogin;
 import Model.MusicPlayer;
 
@@ -26,7 +25,7 @@ public class Game_main {
 		// 시작용 화면 (Y- 방 화면 출력 , N-3번 누르고 시작하면 코난 화면 + 손석구 멘트 BGM)
 		System.out.println("+++++지금부터 나와 함께 게임을 즐겨볼텐가, 거절은 거절하지...(Y/N)");
 		gs.startSelect();
-
+		
 		// 난이도 선택 사항
 		System.out.println("+++++게임을 즐길 난이도를 골라주세요+++++");
 		System.out.println("[1] EASY    [2] NOMAL   [3] HARD ");
@@ -34,7 +33,6 @@ public class Game_main {
 		if (ch == 1) {
 			pe.D = 4; // 난이도에 따른 비밀번호 자릿 수 선택
 			gf.mode = 1; //난이도 선택에 따라 진행되는 게임 메소드용
-			//stop.stop();
 		} else if (ch == 2) {
 			pe.D = 6;
 			gf.mode = 2;
