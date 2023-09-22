@@ -13,10 +13,10 @@ public class QuizChoice {
 	public void Quiz(int roomHint) {
 		while (true) {
 			// 첫번째 힌트 받고 퀴즈 출력
-//			System.out.println(QuizList.get(i).퀴즈);
+//			System.out.println(QuizList.get(i).퀴즈); //퀴즈 불러오기
 //			String answer = sc.next();
 //			if (answer.equals(QuizList.get(i).정답)) {
-//				QuizList.remove(i);
+//				QuizList.remove(i); //맞힌 퀴즈는 삭제
 //				break;
 //			} else {
 //				System.out.println("다시 생각해"); // 틀릴 경우 재시도
