@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="EscRoom">
         <wb-resource deploy-path="/" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/src2"/>
         <property name="context-root" value="EscRoom"/>
         <property name="java-output-path" value="/EscRoom/bin"/>
     </wb-module>
