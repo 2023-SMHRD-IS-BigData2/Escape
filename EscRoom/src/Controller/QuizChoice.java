@@ -12,7 +12,7 @@ public class QuizChoice {
 
 	public void Quiz(int roomHint) {
 		while (!isAns) {
-			// 첫번째 힌트 받고 퀴즈 출력
+			//힌트 선택되면 퀴즈 출력
 			System.out.println("퀴즈 출력"); // 메소드 작동 테스트용
 			break; // 테스트 중
 //			System.out.println(QuizList.get(i).퀴즈); //퀴즈 불러오기

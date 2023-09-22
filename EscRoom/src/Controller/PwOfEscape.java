@@ -1,10 +1,10 @@
-package View;
+package Controller;
 
 import java.util.Random;
 
 public class PwOfEscape {
 	Random rd = new Random();
-	int D;
+	public int D;
 	int[] pw; // 랜덤으로 생성된 비밀번호 저장 배열
 
 	public void RandomPw() {
@@ -14,4 +14,5 @@ public class PwOfEscape {
 		}
 
 	}
+
 }
