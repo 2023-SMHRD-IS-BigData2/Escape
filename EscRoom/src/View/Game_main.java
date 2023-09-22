@@ -33,7 +33,7 @@ public class Game_main {
 		if (ch == 1) {
 			pe.D = 4; // 난이도에 따른 비밀번호 자릿 수 선택
 			gf.mode = 1; //난이도 선택에 따라 진행되는 게임 메소드용
-			stop.stop();
+//			stop.stop();
 		} else if (ch == 2) {
 			pe.D = 6;
 			gf.mode = 2;
