@@ -30,7 +30,7 @@ public class userDB {
 			} // if
 			else {
 				System.out.println("로그인 실패하셨습니다!");
-			}
+			}break;
 
 		} else if (num == 2) {
 			System.out.print("아이디를 입력해 주세요 >> ");
@@ -48,7 +48,7 @@ public class userDB {
 			} else {
 				System.out.println("회원가입에 실패하셨습니다.");
 			} // if
-
+			
 		} else if (num == 3) {
 			break;
 		} else {
