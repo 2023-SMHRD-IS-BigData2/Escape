@@ -22,9 +22,9 @@ public class Game_main {
 		ud.log();
 
 		// 게임 시작 선택 (Y/N)
-		// 시작용 화면 (Y- 방 화면 출력 , N-3번 누르고 시작하면 코난 화면 + 손석구 멘트 BGM)
+		// 시작용 화면 (Y- 방 화면 출력 , N-3번까지 받아주고 그 다음에는 강제 실행)
 		System.out.println("+++++지금부터 나와 함께 게임을 즐겨볼텐가, 거절은 거절하지...(Y/N)");
-		gs.startSelect();
+		gs.startSelect(); //시작하면서 게임 화면 출력 + BGM
 		
 		// 난이도 선택 사항
 		System.out.println("+++++게임을 즐길 난이도를 골라주세요+++++");
@@ -40,14 +40,8 @@ public class Game_main {
 			pe.D = 8;
 			gf.mode = 3;
 		}
-		// 1단계 맞춰야 할 비밀번호 설정(4자리)
-		pe.RandomPw();
-		/*
-		 * 비밀번호 생성 여부 확인용 for(int temp : pe.pw) { System.out.print(temp+" "); }
-		 * System.out.println(); 삭제할 것
-		 */
-
-		// 진행 멘트와 함께
+		pe.RandomPw(); //모드별 비밀번호 생성
+		
 		System.out.println("그럼 게임을 시작해볼까");
 		for (int i = 0; i < 3; i++) {
 			System.out.print("하" + " ");

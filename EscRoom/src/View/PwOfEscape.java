@@ -10,7 +10,7 @@ public class PwOfEscape {
 	public void RandomPw() {
 		pw = new int[D];
 		for (int i = 0; i < D; i++) {
-			pw[i] = rd.nextInt(9) + 1;
+			pw[i] = rd.nextInt(10);
 		}
 
 	}
