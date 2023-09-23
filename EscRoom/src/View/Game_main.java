@@ -41,12 +41,7 @@ public class Game_main {
 			gf.mode = 3;
 		}
 		pe.RandomPw(); //모드별 비밀번호 생성
-		
-		for(int i=0;i<pe.getPw().length;i++) {
-		System.out.print(pe.getPw()[i]+" ");	
-		}
-		
-		
+				
 		System.out.println("그럼 게임을 시작해볼까");
 		for (int i = 0; i < 3; i++) {
 			System.out.print("하" + " ");
