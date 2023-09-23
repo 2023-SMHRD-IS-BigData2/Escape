@@ -91,6 +91,7 @@ public class GameFlow {
 	
 		System.out.println("노말모드의 방에 온 걸 환영한다");
 		System.out.println("그럼 시작하지..");
+		System.out.println("찾아야 할 힌트 수는 총 6개이니 잘 찾아보시게나!!");
 
 		System.out.println("첫번째 방"); // 처음 입장하는 방 화면 또는 맵
 		// 게임 시작

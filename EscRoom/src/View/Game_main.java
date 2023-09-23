@@ -13,6 +13,8 @@ public class Game_main {
 		PwOfEscape pe = new PwOfEscape();
 		StartChoice gs = new StartChoice();
 		GameFlow gf = new GameFlow();
+		GameEnd ge = new GameEnd();
+		
 		Scanner scan = new Scanner(System.in);
 		MusicPlayer stop = null;
 		
@@ -48,9 +50,8 @@ public class Game_main {
 			gf.getMode(ch);
 		}
 
-		//문제를 맞힐 경우 작동메소드, 틀릴 경우 작동 메소드
-
-		// 최종단계까지 가면 게임종료
+		//게임 클리어 한 후 얻은 비밀번호 입력 받고 엔딩스토리 줄력
+		ge.theEnd();
 
 	}	
 
