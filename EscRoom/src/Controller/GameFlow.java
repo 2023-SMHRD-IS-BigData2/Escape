@@ -37,6 +37,7 @@ public class GameFlow {
 		for (int cnt = 0; cnt < 2;) {
 			System.out.println("[1]가구1 [2]가구2 [3]가구");
 			roomHint = scan.nextInt();
+			System.out.println(cnt);
 			qc.Quiz(cnt);// 스토리에 따른 퀴즈 나오고 게임 진행 메소드
 			cnt++;
 		}

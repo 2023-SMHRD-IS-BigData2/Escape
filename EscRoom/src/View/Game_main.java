@@ -31,16 +31,21 @@ public class Game_main {
 		System.out.println("[1] EASY    [2] NOMAL   [3] HARD ");
 		int ch = scan.nextInt();
 		if (ch == 1) {
-			pe.D = 4; // 난이도에 따른 비밀번호 자릿 수 선택
+			pe.digit = 4; // 난이도에 따른 비밀번호 자릿 수 선택
 			gf.mode = 1; //난이도 선택에 따라 진행되는 게임 메소드용
 		} else if (ch == 2) {
-			pe.D = 6;
+			pe.digit = 6;
 			gf.mode = 2;
 		} else if (ch == 3) {
-			pe.D = 8;
+			pe.digit = 8;
 			gf.mode = 3;
 		}
 		pe.RandomPw(); //모드별 비밀번호 생성
+		
+		for(int i=0;i<pe.getPw().length;i++) {
+		System.out.print(pe.getPw()[i]+" ");	
+		}
+		
 		
 		System.out.println("그럼 게임을 시작해볼까");
 		for (int i = 0; i < 3; i++) {
