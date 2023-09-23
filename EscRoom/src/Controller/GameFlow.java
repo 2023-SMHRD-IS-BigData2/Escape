@@ -100,7 +100,7 @@ public class GameFlow {
 		for (int cnt = 0; cnt < 2;) {
 			System.out.println();
 			for (int i = 1; i < 4; i++) {
-				System.out.printf("%3s", SelOfHint.get(i));
+				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
@@ -116,7 +116,7 @@ public class GameFlow {
 		for (int cnt = 2; cnt < 4;) {
 			System.out.println();
 			for (int i = 4; i < 7; i++) {
-				System.out.printf("%3s", SelOfHint.get(i));
+				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
@@ -132,7 +132,7 @@ public class GameFlow {
 		for (int cnt = 4; cnt < 6;) {
 			System.out.println();
 			for (int i = 7; i < 11; i++) {
-				System.out.printf("%3s", SelOfHint.get(i));
+				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
@@ -157,7 +157,7 @@ public class GameFlow {
 		for (int cnt = 0; cnt < 2;) {
 			System.out.println();
 			for (int i = 1; i < 6; i++) {
-				System.out.printf("%3s", SelOfHint.get(i));
+				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
@@ -174,7 +174,7 @@ public class GameFlow {
 		for (int cnt = 2; cnt < 5;) {
 			System.out.println();
 			for (int i = 7; i < 11; i++) {
-				System.out.printf("%3s", SelOfHint.get(i));
+				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
@@ -190,7 +190,7 @@ public class GameFlow {
 		for (int cnt = 5; cnt < 8;) {
 			System.out.println();
 			for (int i = 11; i < 16; i++) {
-				System.out.printf("%3s", SelOfHint.get(i));
+				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
