@@ -24,6 +24,7 @@ public class QuizChoice {
 			System.out.println(quiz.selectAll(n).getQuiz()); //퀴즈 불러오기
 			String answer = sc.next();
 			if (answer.equals(quiz.selectAll(n).getAnswer())||answer.equals("살려주세요")) {
+				System.out.println("훗..생각보다 똑똑한가 보군, 비밀번호 한자리 보여주지!!");
 				System.out.println(p.getPw()[roomHint]);
 				isAns = true;
 			}else {

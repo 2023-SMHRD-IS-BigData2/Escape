@@ -30,24 +30,23 @@ public class Game_main {
 		System.out.println("+++++게임을 즐길 난이도를 골라주세요+++++");
 		System.out.println("[1] EASY    [2] NOMAL   [3] HARD ");
 		int ch = scan.nextInt();
-		if (ch == 1) {
-			pe.digit = 4; // 난이도에 따른 비밀번호 자릿 수 선택
-			gf.mode = 1; //난이도 선택에 따라 진행되는 게임 메소드용
-		} else if (ch == 2) {
-			pe.digit = 6;
-			gf.mode = 2;
-		} else if (ch == 3) {
-			pe.digit = 8;
-			gf.mode = 3;
-		}
-		pe.RandomPw(); //모드별 비밀번호 생성
-				
+		//모드 시작 전 멘트
 		System.out.println("그럼 게임을 시작해볼까");
 		for (int i = 0; i < 3; i++) {
 			System.out.print("하" + " ");
 		}
-
-		gf.getMode(gf.mode); //모드에 따라 진행되는 게임 진행용 메소드
+		System.out.println(); //한줄 띄어쓰기
+		//모드 선택 후 게임 진행
+		if (ch == 1) {
+			pe.RandomPw(4);  // 난이도에 맞는 비밀번호 자릿수만큼 랜덤 수 생성
+			gf.getMode(ch);  // 난이도에 맞는 게임 진행 메소드 소환
+		} else if (ch == 2) {
+			pe.RandomPw(6); 
+			gf.getMode(ch); 
+		} else if (ch == 3) {
+			pe.RandomPw(8); 
+			gf.getMode(ch);
+		}
 
 		//문제를 맞힐 경우 작동메소드, 틀릴 경우 작동 메소드
 

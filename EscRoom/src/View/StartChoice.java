@@ -24,8 +24,8 @@ public class StartChoice {
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		
 		if (choice.equals("Y") || choice.equals("y")) {
-			opening();
-			bgm.play(0);
+//			opening();
+//			bgm.play(0);
 
 			// 화면 출력 메소드만 모아서 있으면 괜찮을 듯
 		} else if (choice.equals("N") || choice.equals("n")) {
