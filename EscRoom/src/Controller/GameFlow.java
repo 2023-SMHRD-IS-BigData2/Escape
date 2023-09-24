@@ -131,7 +131,7 @@ public class GameFlow {
 		
 		for (int cnt = 2; cnt < 4;) {
 			System.out.println();
-			for (int i = 6; i < 9; i++) {
+			for (int i = 4; i < 7; i++) {
 				System.out.printf("%3s", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
@@ -141,20 +141,30 @@ public class GameFlow {
 		} // for
 	} //이지모드 종료
 
+	
+	
+	
 
 	public void nomalMode() {
 	
-		System.out.println("노말모드의 방에 온 걸 환영한다");
-		System.out.println("그럼 시작하지..");
-		System.out.println("찾아야 할 힌트 수는 총 6개이니 잘 찾아보시게나!!");
+		System.out.println( "≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
+				+ "𝙉𝙊𝙍𝙈𝘼𝙇 𝙈𝙊𝘿𝙀 𝙇𝙊𝘼𝘿𝙄𝙉𝙂···\n"
+				+"해당 모드에서는 방 별 비밀번호를 2개씩 찾을 수 있습니다.\n"
+				+ "≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
+				+ "\n\n\n\n\n");
 
-		System.out.println("첫번째 방"); // 처음 입장하는 방 화면 또는 맵
+		GameMap map1 = new GameMap(null, null, null, null, null, null);
+		System.out.println(map1.getMap3B2());
+		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
+
 		// 게임 시작
-
-		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
-		for (int cnt = 0; cnt < 2;) {
+		System.out.println("+익숙한 강의실이다.\n"
+				+"넓은 강의실에는 웅웅거리며 돌아가는 컴퓨터 소리만 난다.\n"
+				+"살펴볼 수 있을 것 같다.");
+		
+		for (int cnt = 0; cnt < 4;) {
 			System.out.println();
-			for (int i = 1; i < 4; i++) {
+			for (int i = 1; i < 5; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
@@ -162,53 +172,112 @@ public class GameFlow {
 			SelOfHint.remove(roomHint);
 			cnt++;
 		}
+		if (roomHint == 1) {
+			System.out.println("System.out.print(”지금부터 게임을 시작하지.”);\r\n"
+					+ "다시봐도 황당한 문구다. 아랫줄에 무언가 더 출력되어있다.\r\n"
+					+ "\r\n"
+					+ "잃어버린 코드는 돌아오지 않는다.\n"
+					+ "요즘같은 시대에 백업도 없다는게 말이되나...? \n"
+					+ "문제가 하나 나왔다.\n");
+		} //1번 선택시 스크립트
+		else if (roomHint == 2) {			
+			System.out.println("이클립스 콘솔창만 덩그러니 남아있다.\r\n"
+					+ "\r\n"
+					+ "Escape Key : 탈출 글쇠\n"
+					+ "Escape : 빠져나오다, 피하다, 무사하다\n"
+					+ "아직 이해하지 못할 이야기가 적혀있다.\r\n"
+					+ ".\r\n"
+					+ ".\r\n"
+					+ ".\r\n"
+					+ "곧 콘솔창이 자동으로 움직인다.\r\n"
+					+ "문제가 하나 나왔는데?\n");
+		} //2번 선택시 스크립트
+		else if (roomHint == 3) {
+			System.out.println("누군가 꼬부랑 글씨로 낙서를 해뒀다.\r\n"
+					+ "EASTEREGG :: eelmph");
+		} //3번 선택시 스크립트
+		else if (roomHint == 4) {
+			System.out.println("아침에 눈을 뜨면 지난 밤이 궁금해~ 오늘은 어떤 간식이 날 기다릴까♫\r\n"
+					+ "간식 대신 찢어진 노트가 놓여있다.\n"
+					+ "오늘도 야근, 내일도 야근..... \n"
+					+ "그래도 내일이면 프로젝트가 끝나는 날이다. 드디어.....\n");
+		}
 
-		System.out.println("멘트"); //
 
-		System.out.println("두번째 방");
+		GameMap map2 = new GameMap(null, null, null, null, null, null);
+		System.out.println(map2.getMapRest2());
+		System.out.println("+++휴게실+++"); 
 
-		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
-		for (int cnt = 2; cnt < 4;) {
+	
+		for (int cnt = 3; cnt < 6;) {
 			System.out.println();
-			for (int i = 4; i < 7; i++) {
+			for (int i = 5; i < 8; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
+			
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
 			SelOfHint.remove(roomHint);
 			cnt++;
+			
+			if (roomHint == 5) {
+				System.out.println("");
+			} //1번 선택시 스크립트
+			else if (roomHint == 6) {			
+				System.out.println();
+			} //2번 선택시 스크립트
+			else if (roomHint == 7) {
+				System.out.println("");
+			}
+
+
+
 		}
-
-		System.out.println("멘트");
-
-		System.out.println("세번째 방");
-
-		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
+		GameMap map3 = new GameMap(null, null, null, null, null, null);
+		System.out.println(map3.getMap3A1());
+		System.out.println("+++3-A 강의실+++"); // 처음 입장하는 방 화면 또는 맵
+		
 		for (int cnt = 4; cnt < 6;) {
 			System.out.println();
-			for (int i = 7; i < 11; i++) {
+			for (int i = 8; i < 11; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
 			qc.Quiz(cnt);
 			SelOfHint.remove(roomHint);
 			cnt++;
+			
+			if (roomHint == 8) {
+				System.out.println("");
+			} //1번 선택시 스크립트
+			else if (roomHint == 9) {			
+				System.out.println("");
+			} //2번 선택시 스크립트
+			else if (roomHint == 10) {			
+				System.out.println("");
+			} //2번 선택시 스크립트
 		}
-	}
+		
+	} //노말모드 종료
+	
+	
+	
+	
+	
 
 	public void hardMode() {
 			
-		System.out.println("하드모드의 방에 온 걸 환영한다");
-		
-		System.out.println("그럼 시작하지..");
-		
-		System.out.println("총 찾아야 할 비밀번호 8자리이니 열심히 하라구");
+		System.out.println("≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
+				+ "𝙃𝘼𝙍𝘿 𝙈𝙊𝘿𝙀 𝙇𝙊𝘼𝘿𝙄𝙉𝙂···\n"
+				+"해당 모드에서는 방 별 비밀번호를 2~3개씩 찾을 수 있습니다.\n"
+				+ "≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
+				+ "\n\n\n\n\n");
 
-		System.out.println("첫번째 방"); // 처음 입장하는 방 화면 또는 맵
-		// 게임 시작
-		System.out.println("이 방에 숨겨진 비밀번호 총 2개야");
+		GameMap map1 = new GameMap(null, null, null, null, null, null);
+		System.out.println(map1.getMap3B2());
+		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 
-		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
+		
 		for (int cnt = 0; cnt < 2;) {
 			System.out.println();
 			for (int i = 1; i < 6; i++) {
@@ -220,12 +289,27 @@ public class GameFlow {
 			cnt++;
 		}
 
-		System.out.println("멘트"); //
+		if (roomHint == 1) {
+			System.out.println("");
+		} 
+		else if (roomHint == 2) {			
+			System.out.println("");
+		} 
+		else if (roomHint == 3) {			
+			System.out.println("");
+		}
+		else if (roomHint == 4) {			
+			System.out.println("");
+		} 
+		else if (roomHint == 5) {			
+			System.out.println("");
+		}	
 
-		System.out.println("두번째 방");
+		
+		GameMap map2 = new GameMap(null, null, null, null, null, null);
+		System.out.println(map1.getMapRest2());
+		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 
-		System.out.println("이 방은 비밀번호 3개가 숨겨져 있어!");
-		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
 		for (int cnt = 2; cnt < 5;) {
 			System.out.println();
 			for (int i = 7; i < 11; i++) {
@@ -236,12 +320,54 @@ public class GameFlow {
 			SelOfHint.remove(roomHint);
 			cnt++;
 		}
+		
+		if (roomHint == 6) {
+			System.out.println("");
+		} 
+		else if (roomHint == 7) {			
+			System.out.println("");
+		} 
+		else if (roomHint == 8) {			
+			System.out.println("");
+		}
+		else if (roomHint == 9) {			
+			System.out.println("");
+		} 
+		else if (roomHint == 10) {			
+			System.out.println("");
+		}	
 
-		System.out.println("멘트");
-
-		System.out.println("세번째 방");
-		System.out.println("마지막 방이군 여기서 3개만 더 찾으면 탈출 각이군");
-		System.out.println("+++++방 안에 가구들을 주의깊게 확인해봐요+++++");
+		GameMap map3 = new GameMap(null, null, null, null, null, null);
+		System.out.println(map3.getMap3A2());
+		System.out.println("+++3-A 강의실+++"); // 처음 입장하는 방 화면 또는 맵
+		
+		for (int cnt = 4; cnt < 6;) {
+			System.out.println();
+			for (int i = 8; i < 11; i++) {
+				System.out.printf("%3s  ", SelOfHint.get(i));
+			}
+			roomHint = scan.nextInt();
+			qc.Quiz(cnt);
+			SelOfHint.remove(roomHint);
+			cnt++;
+			
+			if (roomHint == 11) {
+				System.out.println("");
+			} 
+			else if (roomHint == 12) {			
+				System.out.println("");
+			} 
+			else if (roomHint == 13) {			
+				System.out.println("");
+			}
+			else if (roomHint == 14) {			
+				System.out.println("");
+			} 
+			else if (roomHint == 15) {			
+				System.out.println("");
+			}	
+			
+		}
 		for (int cnt = 5; cnt < 8;) {
 			System.out.println();
 			for (int i = 11; i < 16; i++) {

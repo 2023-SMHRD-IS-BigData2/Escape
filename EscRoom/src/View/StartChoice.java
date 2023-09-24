@@ -19,7 +19,7 @@ public class StartChoice {
 		// 선택에 따른 화면 출력, bgm 등등
 		choice = scan.next();
 		// 거절 누를 시마다 나올 문자열s
-		ment = new String[] { "다시 기회 준다", "다시 눌러", "그냥 내맘대로 한다." };
+		ment = new String[] { "선택을 번복할 수 있습니다.", "정말?", "게임을 강제 실행합니다."  };
 		playlist.add(new MusicVO("시작브금", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\방탈출BGM.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		
@@ -39,7 +39,7 @@ public class StartChoice {
 				bgm.stop();
 			} // if else if end
 		} else {
-			System.out.println("잘못입력되었네요.");
+			System.out.println("잘못입력되었습니다.");
 		}
 		
 	}
