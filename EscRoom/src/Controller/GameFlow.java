@@ -53,7 +53,7 @@ public class GameFlow {
 				+ "≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
 				+ "\n\n\n\n\n");
 
-		GameMap map1 = new GameMap(null, null, null, null, null, null);
+		GameMap map1 = new GameMap(null, null, null, null, null, null, null, null, null);
 		System.out.println(map1.getMap3B1());
 		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 
@@ -77,7 +77,7 @@ public class GameFlow {
 						+ "요즘같은 시대에 백업도 클라우드도 안 된다는 게 말이 되나...? \n"
 						+ "뜬금없이 문제가 하나 나왔다.\n"
 						+ "이걸 풀어야 나갈 수 있다고??");
-			} //1번 선택시 스크립트
+			} //1번 선택
 			else if (roomHint == 2) {			
 				System.out.println("이클립스 콘솔창만 덩그러니 남아있다.\r\n"
 						+ "\r\n"
@@ -91,7 +91,7 @@ public class GameFlow {
 						+ "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿\r\n"
 						+ "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿\r\n"
 						+ "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  Escape(ESC) Key : 탈출 글쇠                   ⣿⣿\r\n"
-						+ "⡇	          Escape : 빠져나오다, 피하다, 무사하다             ⣿⣿\r\n"
+						+ "⡇	         Escape : 빠져나오다, 피하다, 무사하다             ⣿⣿\r\n"
 						+ "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿\r\n"
 						+ "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Escape                                      ⣿⣿\r\n"
 						+ "              :탈출 불가능한 코드??⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⣿⣿\r\n"
@@ -108,7 +108,7 @@ public class GameFlow {
 						+ ".\r\n"
 						+ "곧 콘솔창이 자동으로 움직인다.\r\n"
 						+ "문제가 하나 나왔다.\n");
-			} //2번 선택시 스크립트
+			} //2번 선택
 			else if (roomHint == 3) {
 				System.out.println("누군가 꼬부랑 글씨로 낙서를 해뒀다.\r\n"
 						+ "\r\n"
@@ -137,9 +137,9 @@ public class GameFlow {
 						+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
 						+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
 						+ ""
-						+ "[유용하게 쓸 수 있는 키워드야.\n]"
+						+ "[유용하게 쓸 수 있는 키워드야.]\n"
 						+ "[모를 땐 이걸 입력해.]");
-			} //3번 선택시 스크립트
+			} //3번 선택
 			
 			qc.Quiz(cnt,roomHint); // 퀴즈 문제 생성 + 맞힌 후 비밀번호 한자리씩 출력 기능
 			SelOfHint.remove(roomHint);
@@ -148,41 +148,43 @@ public class GameFlow {
 
 		System.out.println("다른 공간도 둘러보는 것이 좋을 것 같다.");
 		
-		GameMap map2 = new GameMap(null, null, null, null, null, null);
+		GameMap map2 = new GameMap(null, null, null, null, null, null, null, null, null);
 		System.out.println(map2.getMapRest1());
 
 		System.out.println("++++휴게실++++\n"
 				+"3-B 강의실 바로 옆의 휴게실이다.\n"
 				+ "살펴볼 수 있을 것 같다.");
 
-		if (roomHint == 4) {
-			System.out.println("휴게실 가운데에 놓인 테이블이다. \r\n"
-					+ "포스트잇이 하나 붙어있다.\r\n"
-					+ "\r\n"
-					+ "분명 누군가 내 컴퓨터에 손을 댔어.\r\n"
-					+ "이렇게까지 아무런 파일도 안 남을리가 없잖아.\n"
-					+ "\r\n"
-					+ "문제가 하나 나왔다.\n");
-		} //1번 선택시 스크립트
-		else if (roomHint == 5) {			
-			System.out.println("절반쯤 물이 찬 정수기다. 컵이 없어 마신다거나 할 순 없을 것 같다…\r\n"
-					+ "정수기와 벽 사이의 틈에 쪽지가 하나 놓여있다.\r\n"
-					+ "\r\n"
-					+ "[스피어 피싱(spear phishing)]\n"
-					+ ":메일, 팝업 창 또는 웹 사이트의 첨부 파일을 열 경우에... 피해자가 되거나 조직이 위험에 처할 수....\n");
-		} //2번 선택시 스크립트
-		else if (roomHint == 6) {
-			System.out.println("잠겨있다. 잠금장치가 되어 있는데...\r\n"
-					+ "비밀번호를 알기 전까진 나갈 수 없을 것 같다."
-					+ "대체 누가 이런 짓을 저지른 걸까?");
-		} //3번 선택시 스크립트
-		
 		for (int cnt = 2; cnt < 4;) {
 			System.out.println();
 			for (int i = 6; i < 9; i++) {
 				System.out.printf("%3s", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
+			
+			if (roomHint == 4) {
+				System.out.println("휴게실 가운데에 놓인 테이블이다. \r\n"
+						+ "포스트잇이 하나 붙어있다.\r\n"
+						+ "\r\n"
+						+ "분명 누군가 내 컴퓨터에 손을 댔어.\r\n"
+						+ "이렇게까지 아무런 파일도 안 남을리가 없잖아.\n"
+						+ "\r\n"
+						+ "문제가 하나 나왔다.\n");
+			} //4번 선택
+			else if (roomHint == 5) {			
+				System.out.println("절반쯤 물이 찬 정수기다. 컵이 없어 마신다거나 할 순 없을 것 같다…\r\n"
+						+ "정수기와 벽 사이의 틈에 쪽지가 하나 놓여있다.\r\n"
+						+ "\r\n"
+						+ "[스피어 피싱(spear phishing)]\n"
+						+ ":메일, 팝업 창 또는 웹 사이트의 첨부 파일을 열 경우에... 피해자가 되거나 조직이 위험에 처할 수....\n");
+			} //5번 선택
+			else if (roomHint == 6) {
+				System.out.println("잠겨있다. 잠금장치가 되어 있는데...\r\n"
+						+ "비밀번호를 알기 전까진 나갈 수 없을 것 같다."
+						+ "대체 누가 이런 짓을 저지른 걸까?");
+			} //6번 선택
+			
+			
 			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
@@ -201,7 +203,7 @@ public class GameFlow {
 				+ "≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
 				+ "\n\n\n\n\n");
 
-		GameMap map1 = new GameMap(null, null, null, null, null, null);
+		GameMap map1 = new GameMap(null, null, null, null, null, null, null, null, null);
 		System.out.println(map1.getMap3B2());
 		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 
@@ -286,7 +288,7 @@ public class GameFlow {
 					+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
 					+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
 					+ ""
-					+ "[유용하게 쓸 수 있는 키워드야.\n]"
+					+ "[유용하게 쓸 수 있는 키워드야.]\n"
 					+ "[모를 땐 이걸 입력해.]");
 		} //3번 선택
 		else if (roomHint == 4) {
@@ -301,7 +303,7 @@ public class GameFlow {
 	}
 
 
-		GameMap map2 = new GameMap(null, null, null, null, null, null);
+		GameMap map2 = new GameMap(null, null, null, null, null, null, null, null, null);
 		System.out.println(map2.getMapRest2());
 		System.out.println("+++휴게실+++"); 
 
@@ -341,8 +343,8 @@ public class GameFlow {
 
 
 		}
-		GameMap map3 = new GameMap(null, null, null, null, null, null);
-		System.out.println(map3.getMap3A1());
+		GameMap map3 = new GameMap(null, null, null, null, null, null, null, null, null);
+		System.out.println(map3.getMap3A2());
 		System.out.println("+++3-A 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 		
 		for (int cnt = 4; cnt < 6;) {
@@ -410,8 +412,8 @@ public class GameFlow {
 				+ "≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡ ≡≡≡≡≡\n"
 				+ "\n\n\n\n\n");
 
-		GameMap map1 = new GameMap(null, null, null, null, null, null);
-		System.out.println(map1.getMap3B2());
+		GameMap map1 = new GameMap(null, null, null, null, null, null, null, null, null);
+		System.out.println(map1.getMap3B3());
 		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 
 		
@@ -491,7 +493,7 @@ public class GameFlow {
 					+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
 					+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
 					+ ""
-					+ "[유용하게 쓸 수 있는 키워드야.\n]"
+					+ "[유용하게 쓸 수 있는 키워드야.]\n"
 					+ "[모를 땐 이걸 입력해.]");
 		} //3번 선택
 		else if (roomHint == 4) {			
@@ -534,8 +536,8 @@ public class GameFlow {
 	}
 
 		
-		GameMap map2 = new GameMap(null, null, null, null, null, null);
-		System.out.println(map1.getMapRest2());
+		GameMap map2 = new GameMap(null, null, null, null, null, null, null, null, null);
+		System.out.println(map1.getMapRest3());
 		System.out.println("+++3-B 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 
 		for (int cnt = 2; cnt < 5;) {
@@ -587,8 +589,8 @@ public class GameFlow {
 		cnt++;
 	}
 
-		GameMap map3 = new GameMap(null, null, null, null, null, null);
-		System.out.println(map3.getMap3A2());
+		GameMap map3 = new GameMap(null, null, null, null, null, null, null, null, null);
+		System.out.println(map3.getMap3A3());
 		System.out.println("+++3-A 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 		
 		for (int cnt = 4; cnt < 6;) {
