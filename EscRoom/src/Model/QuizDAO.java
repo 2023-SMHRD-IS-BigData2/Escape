@@ -67,7 +67,7 @@ public class QuizDAO {
 		try {
 			psmt = conn.prepareStatement(sql);
 
-	         psmt.setLong(1, num);
+			psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -98,7 +98,7 @@ public class QuizDAO {
 		try {
 			psmt = conn.prepareStatement(sql);
 
-	         psmt.setLong(1, num);
+			psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -129,7 +129,7 @@ public class QuizDAO {
 		try {
 			psmt = conn.prepareStatement(sql);
 
-	         psmt.setLong(1, num);
+			psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -160,7 +160,7 @@ public class QuizDAO {
 		try {
 			psmt = conn.prepareStatement(sql);
 
-	         psmt.setLong(1, num);
+			psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -191,7 +191,7 @@ public class QuizDAO {
 		try {
 			psmt = conn.prepareStatement(sql);
 
-	         psmt.setLong(1, num);
+			psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
