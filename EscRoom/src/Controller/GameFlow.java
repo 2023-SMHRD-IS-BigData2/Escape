@@ -96,7 +96,7 @@ public class GameFlow {
 					for (int i = 0; i < room1.length(); i++) {
 						game1[i] = room1.charAt(i);
 						System.out.print(game1[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -131,7 +131,7 @@ public class GameFlow {
 					for (int i = 0; i < room2.length(); i++) {
 						game2[i] = room2.charAt(i);
 						System.out.print(game2[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -169,7 +169,7 @@ public class GameFlow {
 					for (int i = 0; i < room3.length(); i++) {
 						game3[i] = room3.charAt(i);
 						System.out.print(game3[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -203,7 +203,7 @@ public class GameFlow {
 					for (int i = 0; i < room4.length(); i++) {
 						game4[i] = room4.charAt(i);
 						System.out.print(game4[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -218,7 +218,7 @@ public class GameFlow {
 					for (int i = 0; i < room5.length(); i++) {
 						game5[i] = room5.charAt(i);
 						System.out.print(game5[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -231,7 +231,7 @@ public class GameFlow {
 					for (int i = 0; i < room6.length(); i++) {
 						game6[i] = room6.charAt(i);
 						System.out.print(game6[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -282,7 +282,7 @@ public class GameFlow {
 			for (int i = 0; i < normal1.length(); i++) {
 				arrnor1[i] = normal1.charAt(i);
 				System.out.print(arrnor1[i]);
-				Thread.sleep(1);
+				Thread.sleep(50);
 			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -303,7 +303,7 @@ public class GameFlow {
 					for (int i = 0; i < nor1.length(); i++) {
 						arrnormal1[i] = nor1.charAt(i);
 						System.out.print(arrnormal1[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -338,7 +338,7 @@ public class GameFlow {
 					for (int i = 0; i < nor2.length(); i++) {
 						arrnormal2[i] = nor2.charAt(i);
 						System.out.print(arrnormal2[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -376,7 +376,7 @@ public class GameFlow {
 					for (int i = 0; i < nor3.length(); i++) {
 						arrnormal3[i] = nor3.charAt(i);
 						System.out.print(arrnormal3[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -390,7 +390,7 @@ public class GameFlow {
 					for (int i = 0; i < nor4.length(); i++) {
 						arrnormal4[i] = nor4.charAt(i);
 						System.out.print(arrnormal4[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -421,7 +421,7 @@ public class GameFlow {
 					for (int i = 0; i < nor5.length(); i++) {
 						arrnormal5[i] = nor5.charAt(i);
 						System.out.print(arrnormal5[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -436,7 +436,7 @@ public class GameFlow {
 					for (int i = 0; i < nor6.length(); i++) {
 						arrnormal6[i] = nor6.charAt(i);
 						System.out.print(arrnormal6[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -449,7 +449,7 @@ public class GameFlow {
 					for (int i = 0; i < nor7.length(); i++) {
 						arrnormal7[i] = nor7.charAt(i);
 						System.out.print(arrnormal7[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -479,7 +479,7 @@ public class GameFlow {
 					for (int i = 0; i < nor8.length(); i++) {
 						arrnormal8[i] = nor8.charAt(i);
 						System.out.print(arrnormal8[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -497,7 +497,7 @@ public class GameFlow {
 					for (int i = 0; i < nor9.length(); i++) {
 						arrnormal9[i] = nor9.charAt(i);
 						System.out.print(arrnormal9[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -511,7 +511,7 @@ public class GameFlow {
 					for (int i = 0; i < nor10.length(); i++) {
 						arrnormal10[i] = nor10.charAt(i);
 						System.out.print(arrnormal10[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -577,7 +577,7 @@ public class GameFlow {
 					for (int i = 0; i < hard1.length(); i++) {
 						arrhard1[i] = hard1.charAt(i);
 						System.out.print(arrhard1[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -612,7 +612,7 @@ public class GameFlow {
 					for (int i = 0; i < hard2.length(); i++) {
 						arrhard2[i] = hard2.charAt(i);
 						System.out.print(arrhard2[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -650,7 +650,7 @@ public class GameFlow {
 					for (int i = 0; i < hard3.length(); i++) {
 						arrhard3[i] = hard3.charAt(i);
 						System.out.print(arrhard3[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -682,7 +682,7 @@ public class GameFlow {
 					for (int i = 0; i < hard4.length(); i++) {
 						arrhard4[i] = hard4.charAt(i);
 						System.out.print(arrhard4[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -697,7 +697,7 @@ public class GameFlow {
 					for (int i = 0; i < hard5.length(); i++) {
 						arrhard5[i] = hard5.charAt(i);
 						System.out.print(arrhard5[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -727,7 +727,7 @@ public class GameFlow {
 					for (int i = 0; i < hard6.length(); i++) {
 						arrhard6[i] = hard6.charAt(i);
 						System.out.print(arrhard6[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -742,7 +742,7 @@ public class GameFlow {
 					for (int i = 0; i < hard7.length(); i++) {
 						arrhard7[i] = hard7.charAt(i);
 						System.out.print(arrhard7[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -755,7 +755,7 @@ public class GameFlow {
 					for (int i = 0; i < hard8.length(); i++) {
 						arrhard8[i] = hard8.charAt(i);
 						System.out.print(arrhard8[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -769,7 +769,7 @@ public class GameFlow {
 					for (int i = 0; i < hard9.length(); i++) {
 						arrhard9[i] = hard9.charAt(i);
 						System.out.print(arrhard9[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -783,7 +783,7 @@ public class GameFlow {
 					for (int i = 0; i < hard10.length(); i++) {
 						arrhard10[i] = hard10.charAt(i);
 						System.out.print(arrhard10[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -814,7 +814,7 @@ public class GameFlow {
 					for (int i = 0; i < hard11.length(); i++) {
 						arrhard11[i] = hard11.charAt(i);
 						System.out.print(arrhard11[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -832,7 +832,7 @@ public class GameFlow {
 					for (int i = 0; i < hard12.length(); i++) {
 						arrhard12[i] = hard12.charAt(i);
 						System.out.print(arrhard12[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -846,7 +846,7 @@ public class GameFlow {
 					for (int i = 0; i < hard13.length(); i++) {
 						arrhard13[i] = hard13.charAt(i);
 						System.out.print(arrhard13[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -860,7 +860,7 @@ public class GameFlow {
 					for (int i = 0; i < hard14.length(); i++) {
 						arrhard14[i] = hard14.charAt(i);
 						System.out.print(arrhard14[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -873,7 +873,7 @@ public class GameFlow {
 					for (int i = 0; i < hard15.length(); i++) {
 						arrhard15[i] = hard15.charAt(i);
 						System.out.print(arrhard15[i]);
-						Thread.sleep(1);
+						Thread.sleep(50);
 					}
 				} catch (InterruptedException e) {
 					e.printStackTrace();
