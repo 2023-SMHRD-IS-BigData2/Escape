@@ -23,7 +23,7 @@ public class QuizChoice {
 		while (!isAns) {
 			System.out.println(quiz.selectAll(n).getQuiz()); //퀴즈 불러오기
 			String answer = sc.next();
-			if (answer.equals(quiz.selectAll(n).getAnswer())||answer.equals("helpme")) {
+			if (answer.equals(quiz.selectAll(n).getAnswer())||answer.equals("escape")) {
 				System.out.println("비밀번호를 획득했습니다.");
 				System.out.println(p.getPw()[roomHint]);
 				isAns = true;
