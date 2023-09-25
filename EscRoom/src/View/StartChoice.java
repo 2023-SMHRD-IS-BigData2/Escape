@@ -17,31 +17,33 @@ public class StartChoice {
 
 	public void startSelect() {
 		// 선택에 따른 화면 출력, bgm 등등
-		choice = scan.next();
 		// 거절 누를 시마다 나올 문자열s
-		ment = new String[] { "선택을 번복할 수 있습니다.", "정말?", "게임을 강제 실행합니다."  };
+		ment = new String[] { "선택을 번복할 수 있습니다.", "정말?", "게임을 강제 실행합니다." };
 		playlist.add(new MusicVO("시작브금", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\방탈출BGM.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
-		
-		if (choice.equals("Y") || choice.equals("y")) {
+		while (true) {
+			choice = scan.next();
+			if (choice.equals("Y") || choice.equals("y")) {
 //			opening();
 //			bgm.play(0);
+				break;
 
-			// 화면 출력 메소드만 모아서 있으면 괜찮을 듯
-		} else if (choice.equals("N") || choice.equals("n")) {
-			System.out.println(ment[cnt]);
-			cnt++;
-			if (cnt != 3) {
-				startSelect();
+				// 화면 출력 메소드만 모아서 있으면 괜찮을 듯
+			} else if (choice.equals("N") || choice.equals("n")) {
+				System.out.println(ment[cnt]);
+				cnt++;
+				if (cnt != 3) {
+					startSelect();
+				} else {
+					opening();
+					MusicVO currentMusic = bgm.play(0);
+					bgm.stop();
+				} // if else if end
 			} else {
-				opening();
-				MusicVO currentMusic = bgm.play(0);
-				bgm.stop();
-			} // if else if end
-		} else {
-			System.out.println("잘못입력되었습니다.");
+				System.out.println("잘못입력되었습니다.");
+
+			}
 		}
-		
 	}
 
 	public void opening() {
