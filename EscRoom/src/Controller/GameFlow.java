@@ -692,8 +692,7 @@ public class GameFlow {
 			else if (roomHint == 15) {			
 				System.out.println("음? 자세히보니…. 끝난 수업들의 교재들이다.\r\n"
 						+ "사람 사는 건 다 똑같나보다…\n"
-						+ "접혀서 튀어나온 페이지가 보인다.\n"
-						+ "");
+						);
 			}  //15번 선택
 			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
