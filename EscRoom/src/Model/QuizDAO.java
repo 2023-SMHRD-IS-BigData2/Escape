@@ -20,10 +20,9 @@ public class QuizDAO {
 			String url = "jdbc:oracle:thin:@project-db-campus.smhrd.com:1524:xe";
 			conn = DriverManager.getConnection(url, user, password);
 
-			if (conn != null) {
-				System.out.println("연결 성공");
-			} else {
+			if (conn == null) {
 				System.out.println("연결 실패");
+			} else {
 			}
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -36,6 +35,37 @@ public class QuizDAO {
 		getConn();
 		QuizDTO qd = null;
 		String sql = "select * from quiz where rownum <= ?";
+		try {
+			psmt = conn.prepareStatement(sql);
+
+			psmt.setLong(1, num);
+
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				String quiz = rs.getString(1);
+				String answer = rs.getString(2);
+				String code = rs.getString(3);
+				String hinteu = rs.getString(4);
+				String object = rs.getString(5);
+
+				qd = new QuizDTO(quiz, answer, code, hinteu, object);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+
+		return qd;
+
+	}
+
+	public QuizDTO selectSql(int num) {
+		getConn();
+		QuizDTO qd = null;
+		String sql = "SELECT A.* FROM ( SELECT ROWNUM AS RN,A.* FROM (SELECT * FROM QUIZ)A WHERE ROWNUM <=20) A WHERE RN  >= 0";
 		try {
 			psmt = conn.prepareStatement(sql);
 
