@@ -94,7 +94,7 @@ public class GameFlow {
 						+ "EASTEREGG :: eelmph");
 			} //3번 선택시 스크립트
 			
-			qc.Quiz(cnt); // 퀴즈 문제 생성 + 맞힌 후 비밀번호 한자리씩 출력 기능
+			qc.Quiz(cnt,roomHint); // 퀴즈 문제 생성 + 맞힌 후 비밀번호 한자리씩 출력 기능
 			SelOfHint.remove(roomHint);
 			cnt++;// 각 방마다 얻을 수 있는 힌트 수만큼 반복 진행
 		} // for
@@ -136,7 +136,7 @@ public class GameFlow {
 				System.out.printf("%3s", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
-			qc.Quiz(cnt);
+			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
 		} // for
@@ -169,7 +169,7 @@ public class GameFlow {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
-			qc.Quiz(cnt);
+			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
 		}
@@ -217,7 +217,7 @@ public class GameFlow {
 			}
 			
 			roomHint = scan.nextInt();
-			qc.Quiz(cnt);
+			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
 			
@@ -244,7 +244,7 @@ public class GameFlow {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
-			qc.Quiz(cnt);
+			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
 			
@@ -392,7 +392,7 @@ public class GameFlow {
 					+ "만일(if)조건식이 참(true)이면...\r\n"
 					+ "-> 만일 나에게 이런 일이 일어나지 않았더라면……");
 		}	
-		qc.Quiz(cnt);
+		qc.Quiz(cnt,roomHint);
 		SelOfHint.remove(roomHint);
 		cnt++;
 	}
@@ -446,7 +446,7 @@ public class GameFlow {
 					+ "...이게 다 무슨 말이야??");
 		}	
 		
-		qc.Quiz(cnt);
+		qc.Quiz(cnt,roomHint);
 		SelOfHint.remove(roomHint);
 		cnt++;
 	}
@@ -512,7 +512,7 @@ public class GameFlow {
 						+ "접혀서 튀어나온 페이지가 보인다.\n"
 						+ "");
 			}
-			qc.Quiz(cnt);
+			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
 			

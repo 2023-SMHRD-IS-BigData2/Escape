@@ -31,14 +31,12 @@ public class QuizDAO {
 		}
 	}
 
-	public QuizDTO selectAll(int num) {
+	public QuizDTO selectJava(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "select * from quiz where rownum <= ?";
+		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = 'JAVA'";
 		try {
 			psmt = conn.prepareStatement(sql);
-
-			psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -65,11 +63,135 @@ public class QuizDAO {
 	public QuizDTO selectSql(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT A.* FROM ( SELECT ROWNUM AS RN,A.* FROM (SELECT * FROM QUIZ)A WHERE ROWNUM <=20) A WHERE RN  >= 0";
+		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = 'SQL'";
 		try {
 			psmt = conn.prepareStatement(sql);
 
-			psmt.setLong(1, num);
+//	         psmt.setLong(1, num);
+
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				String quiz = rs.getString(1);
+				String answer = rs.getString(2);
+				String code = rs.getString(3);
+				String hinteu = rs.getString(4);
+				String object = rs.getString(5);
+
+				qd = new QuizDTO(quiz, answer, code, hinteu, object);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+
+		return qd;
+
+	}
+
+	public QuizDTO selectSense(int num) {
+		getConn();
+		QuizDTO qd = null;
+		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '상식'";
+		try {
+			psmt = conn.prepareStatement(sql);
+
+//	         psmt.setLong(1, num);
+
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				String quiz = rs.getString(1);
+				String answer = rs.getString(2);
+				String code = rs.getString(3);
+				String hinteu = rs.getString(4);
+				String object = rs.getString(5);
+
+				qd = new QuizDTO(quiz, answer, code, hinteu, object);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+
+		return qd;
+
+	}
+
+	public QuizDTO selectNonSense(int num) {
+		getConn();
+		QuizDTO qd = null;
+		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '넌센스'";
+		try {
+			psmt = conn.prepareStatement(sql);
+
+//	         psmt.setLong(1, num);
+
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				String quiz = rs.getString(1);
+				String answer = rs.getString(2);
+				String code = rs.getString(3);
+				String hinteu = rs.getString(4);
+				String object = rs.getString(5);
+
+				qd = new QuizDTO(quiz, answer, code, hinteu, object);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+
+		return qd;
+
+	}
+
+	public QuizDTO selectFouridioms(int num) {
+		getConn();
+		QuizDTO qd = null;
+		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '사자성어'";
+		try {
+			psmt = conn.prepareStatement(sql);
+
+//	         psmt.setLong(1, num);
+
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				String quiz = rs.getString(1);
+				String answer = rs.getString(2);
+				String code = rs.getString(3);
+				String hinteu = rs.getString(4);
+				String object = rs.getString(5);
+
+				qd = new QuizDTO(quiz, answer, code, hinteu, object);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+
+		return qd;
+
+	}
+
+	public QuizDTO selectCapital(int num) {
+		getConn();
+		QuizDTO qd = null;
+		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '수도'";
+		try {
+			psmt = conn.prepareStatement(sql);
+
+//	         psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
