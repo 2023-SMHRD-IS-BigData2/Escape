@@ -8,6 +8,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/user/Desktop/ESCAPEROOM/player.jar"/>
+	<classpathentry kind="lib" path="C:/Users/smhrd/git/repository/Mini_Project_Team2/BGM/player.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

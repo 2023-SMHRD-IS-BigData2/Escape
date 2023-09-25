@@ -180,7 +180,7 @@ public class GameFlow {
 
 		for (int cnt = 2; cnt < 4;) {
 			System.out.println();
-			for (int i = 6; i < 9; i++) {
+			for (int i = 4; i < 7; i++) {
 				System.out.printf("%3s", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();

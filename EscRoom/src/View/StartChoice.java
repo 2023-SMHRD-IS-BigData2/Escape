@@ -20,12 +20,13 @@ public class StartChoice {
 		// 선택에 따른 화면 출력, bgm 등등
 		// 거절 누를 시마다 나올 문자열s
 		ment = new String[] { "선택을 번복할 수 있습니다.", "정말?", "게임을 강제 실행합니다." };
-		playlist.add(new MusicVO("시작브금1", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\방탈출BGM.mp3"));
-		playlist.add(new MusicVO("시작브금2", "BGM", "‪C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\011_키보드+타이핑.mp3"));
-		playlist.add(new MusicVO("시작브금3", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\효과음3.mp3"));
-		playlist.add(new MusicVO("퀴즈출제", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\11멜로디.mp3"));
-		playlist.add(new MusicVO("퀴즈정답", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\015_띠링.mp3"));
-		playlist.add(new MusicVO("퀴즈오답", "BGM", "C:\\Users\\user\\Desktop\\ESCAPEROOM\\BGM\\107_왕왕왕와~~~~~.mp3"));
+		ArrayList<MusicVO> playlist = new ArrayList<>();
+		playlist.add(new MusicVO("시작브금1", "BGM", "BGM/방탈출BGM.mp3"));
+		playlist.add(new MusicVO("시작브금2", "BGM", "BGM/011_키보드+타이핑.mp3"));
+		playlist.add(new MusicVO("시작브금3", "BGM", "BGM/효과음3.mp3"));
+		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM/11멜로디.mp3"));
+		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM/015_띠링.mp3"));
+		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM/107_왕왕왕와~~~~~.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		while (true) {
 			choice = scan.next();
