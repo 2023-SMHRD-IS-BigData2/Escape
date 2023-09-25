@@ -41,7 +41,7 @@ public class QuizChoice {
 		}
 		
 		isAns = false;
-		int n = rd.nextInt(20) + 1;
+		
 		while (!isAns) {
 			System.out.println(qd.getQuiz()); // 퀴즈 불러오기
 			String answer = sc.next();

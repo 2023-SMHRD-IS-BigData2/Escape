@@ -310,7 +310,7 @@ public class GameFlow {
 	
 		for (int cnt = 3; cnt < 5;) {
 			System.out.println();
-			for (int i = 6; i < 9; i++) {
+			for (int i = 5; i < 8; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			
@@ -349,7 +349,7 @@ public class GameFlow {
 		
 		for (int cnt = 5; cnt < 7;) {
 			System.out.println();
-			for (int i = 11; i < 14; i++) {
+			for (int i = 8; i < 11; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
 			}
 			roomHint = scan.nextInt();
