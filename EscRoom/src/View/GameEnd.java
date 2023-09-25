@@ -8,7 +8,7 @@ public class GameEnd {
 	PwOfEscape pe = new PwOfEscape();
 	String password;
 	
-	boolean isRight = false;
+	boolean isRight = true;
 
 	public void theEnd() {
 		System.out.println("모든 힌트를 모았나? 그럼 한번 입력해보도록");
@@ -22,9 +22,8 @@ public class GameEnd {
 
 		for (int i = 0; i < answer.size(); i++) {
 			if (pe.getPw()[i] != answer.get(i)) {
+				isRight = false;
 				break;
-			} else {
-				isRight = true;
 			}
 		} // for
 		
