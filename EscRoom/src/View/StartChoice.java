@@ -41,7 +41,8 @@ public class StartChoice {
 				if (cnt != 3) {
 					startSelect();
 				} else {
-					opening();		
+					opening();
+					bgm.play(0);
 				}
 				break;
 			} else {

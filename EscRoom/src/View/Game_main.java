@@ -89,7 +89,7 @@ public class Game_main {
 		bgm.stop(2);
 		System.out.println("START?  (Y/N)");
 		gs.startSelect(); // 시작하면서 게임 화면 출력 + BGM
-
+		
 		// 난이도 선택 사항
 		System.out.println("+++++게임의 난이도를 선택해주세요+++++");
 		System.out.println("[1] EASY    [2] NOMAL   [3] HARD ");
