@@ -24,8 +24,8 @@ public class StartChoice {
 		while (true) {
 			choice = scan.next();
 			if (choice.equals("Y") || choice.equals("y")) {
-//			opening();
-//			bgm.play(0);
+			opening();
+			bgm.play(0);
 				break;
 
 				// 화면 출력 메소드만 모아서 있으면 괜찮을 듯
@@ -37,8 +37,9 @@ public class StartChoice {
 				} else {
 					opening();
 					MusicVO currentMusic = bgm.play(0);
-					bgm.stop();
-				} // if else if end
+					bgm.stop();				
+				}
+				break;
 			} else {
 				System.out.println("잘못입력되었습니다.");
 
