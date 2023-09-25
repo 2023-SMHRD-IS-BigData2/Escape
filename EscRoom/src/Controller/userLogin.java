@@ -14,7 +14,7 @@ public class userLogin {
 	
 	while(true) {
 		System.out.println("=========방 탈출 게임=========");
-		System.out.println("[1]로그인 [2]회원가입 [3] 게임종료");
+		System.out.println("[1]로그인 [2]회원가입");
 		System.out.print("숫자를 입력해 주세요 >> ");
 		int num = sc.nextInt();
 
@@ -51,8 +51,6 @@ public class userLogin {
 				System.out.println("회원가입에 실패하셨습니다.");
 			} // if
 			
-		} else if (num == 3) {
-			break;
 		} else {
 			System.out.println("잘못 입력하셨습니다.");
 		} // if

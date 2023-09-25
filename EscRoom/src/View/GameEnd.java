@@ -11,7 +11,10 @@ public class GameEnd {
 	boolean isRight = false;
 
 	public void theEnd() {
-		System.out.println("모든 힌트를 모았나? 그럼 한번 입력해보도록");
+		System.out.println("... ...\n"
+				+"삑. 삑. 삑. 삑.\n"
+				+"잠금장치에서 소리가 들린다.\n"
+				+"비밀번호를 입력해보자.\n");
 		password = scan.next(); //비밀번호를 문자열로 입력받음
 
 //		String[] array = password.split(""); //입력받은 문자열로 하나씩 자르기
