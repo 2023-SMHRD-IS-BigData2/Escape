@@ -24,19 +24,19 @@ public class QuizChoice {
 			int n = rd.nextInt(20) + 1;
 			qd = quiz.selectSense(roomHint);
 		} else if (roomHint == 3 || roomHint == 10) {
-			int n = rd.nextInt(20) + 1;
+			int n = rd.nextInt(19) + 1;
 			qd = quiz.selectCapital(n);
 		} else if (roomHint == 8 || roomHint == 13) {
-			int n = rd.nextInt(20) + 1;
+			int n = rd.nextInt(19) + 1;
 			qd = quiz.selectFouridioms(n);
 		} else if (roomHint == 1 || roomHint == 5 || roomHint == 11) {
-			int n = rd.nextInt(10) + 1;
+			int n = rd.nextInt(9) + 1;
 			qd = quiz.selectJava(n);
 		} else if (roomHint == 4 || roomHint == 7 || roomHint == 12) {
-			int n = rd.nextInt(20) + 1;
+			int n = rd.nextInt(19) + 1;
 			qd = quiz.selectNonSense(n);
 		} else if (roomHint == 2 || roomHint == 6 || roomHint == 15) {
-			int n = rd.nextInt(20) + 1;
+			int n = rd.nextInt(9) + 1;
 			qd = quiz.selectSql(n);
 		}
 		

@@ -70,7 +70,7 @@ public class GameFlow {
 			roomHint = scan.nextInt();
 			
 			if (roomHint == 1) {
-				System.out.println("System.out.print(”지금부터 게임을 시작하지.”);\r\n"
+				System.out.println("지금부터 게임을 시작하지.\r\n"
 						+ "다시봐도 황당한 문구다. 아랫줄에 무언가 더 출력되어있다.\r\n"
 						+ "\r\n"
 						+ "[잃어버린 코드는 돌아오지 않는다.]\n\n"
@@ -221,7 +221,7 @@ public class GameFlow {
 
 		
 		if (roomHint == 1) {
-			System.out.println("System.out.print(”지금부터 게임을 시작하지.”);\r\n"
+			System.out.println("지금부터 게임을 시작하지.\r\n"
 					+ "다시봐도 황당한 문구다. 아랫줄에 무언가 더 출력되어있다.\r\n"
 					+ "\r\n"
 					+ "[잃어버린 코드는 돌아오지 않는다.]\n\n"
@@ -426,7 +426,7 @@ public class GameFlow {
 
 
 		if (roomHint == 1) {
-			System.out.println("System.out.print(”지금부터 게임을 시작하지.”);\r\n"
+			System.out.println("지금부터 게임을 시작하지.\r\n"
 					+ "다시봐도 황당한 문구다. 아랫줄에 무언가 더 출력되어있다.\r\n"
 					+ "\r\n"
 					+ "[잃어버린 코드는 돌아오지 않는다.]\n\n"

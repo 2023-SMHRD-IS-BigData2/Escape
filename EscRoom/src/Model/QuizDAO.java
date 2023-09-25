@@ -34,10 +34,10 @@ public class QuizDAO {
 	public QuizDTO selectJava(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = 'JAVA'";
+		String sql = "SELECT * FROM (SELECT * FROM QUIZ WHERE QUIZ_CODE = 'JAVA') WHERE ROWNUM <= ?";
 		try {
 			psmt = conn.prepareStatement(sql);
-
+			psmt.setInt(1, num);
 			rs = psmt.executeQuery();
 
 			while (rs.next()) {
@@ -63,11 +63,11 @@ public class QuizDAO {
 	public QuizDTO selectSql(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = 'SQL'";
+		String sql = "SELECT * FROM (SELECT * FROM QUIZ WHERE QUIZ_CODE = 'SQL') WHERE ROWNUM <= ?";
 		try {
 			psmt = conn.prepareStatement(sql);
 
-//	         psmt.setLong(1, num);
+	         psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -94,11 +94,11 @@ public class QuizDAO {
 	public QuizDTO selectSense(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '상식'";
+		String sql = "SELECT * FROM (SELECT * FROM QUIZ WHERE QUIZ_CODE = '상식') WHERE ROWNUM <= ?";
 		try {
 			psmt = conn.prepareStatement(sql);
 
-//	         psmt.setLong(1, num);
+	         psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -125,11 +125,11 @@ public class QuizDAO {
 	public QuizDTO selectNonSense(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '넌센스'";
+		String sql = "SELECT * FROM (SELECT * FROM QUIZ WHERE QUIZ_CODE = '넌센스') WHERE ROWNUM <= ?";
 		try {
 			psmt = conn.prepareStatement(sql);
 
-//	         psmt.setLong(1, num);
+	         psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -156,11 +156,11 @@ public class QuizDAO {
 	public QuizDTO selectFouridioms(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '사자성어'";
+		String sql = "SELECT * FROM (SELECT * FROM QUIZ WHERE QUIZ_CODE = '사자성어') WHERE ROWNUM <= ?";
 		try {
 			psmt = conn.prepareStatement(sql);
 
-//	         psmt.setLong(1, num);
+	         psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
@@ -187,11 +187,11 @@ public class QuizDAO {
 	public QuizDTO selectCapital(int num) {
 		getConn();
 		QuizDTO qd = null;
-		String sql = "SELECT * FROM QUIZ WHERE QUIZ_CODE = '수도'";
+		String sql = "SELECT * FROM (SELECT * FROM QUIZ WHERE QUIZ_CODE = '수도') WHERE ROWNUM <= ?";
 		try {
 			psmt = conn.prepareStatement(sql);
 
-//	         psmt.setLong(1, num);
+	         psmt.setLong(1, num);
 
 			rs = psmt.executeQuery();
 
