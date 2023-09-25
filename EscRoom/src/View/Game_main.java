@@ -49,7 +49,7 @@ public class Game_main {
 		System.out.println("");
 		bgm.play(1);
 		String start2 = "월요일에 있을 미니 프로젝트를 앞두고 열심히 코드를 짜고있던 S.\n" + "화면에 집중하다보니 빽빽하던 강의실도 텅 비어버렸다.\n"
-				+ " 시간은 10시, 슬슬 집에 갈까 생각하면서 피곤한 눈을 깜빡이면….\n";
+				+ "시간은 10시, 슬슬 집에 갈까 생각하면서 피곤한 눈을 깜빡이면….\n";
 		char[] arr2 = new char[start2.length()];
 		try {
 			for (int i = 0; i < start2.length(); i++) {
