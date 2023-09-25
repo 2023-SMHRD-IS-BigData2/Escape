@@ -35,7 +35,7 @@ public class Game_main {
 		// 게임 시작 선택 (Y/N)
 		// 시작용 화면 (Y- 방 화면 출력 , N-3번까지 받아주고 그 다음에는 강제 실행)
 		String start1 = "" + " _  _ _  ___  ___  ___ \r\n" + "| || \\ ||_ _|| . \\| . |\r\n"
-				+ "| ||    | | | |    /| | |\r\n" + "|_||_\\_| |_| |_\\_\\`__'\r\n" + "                       ";
+				+ "| ||    | | ||   /| | |\r\n" + "|_||_\\_| |_| |_\\_\\ `__'\r\n" + "                       ";
 		char[] arr1 = new char[start1.length()];
 		try {
 			for (int i = 0; i < start1.length(); i++) {
@@ -115,8 +115,9 @@ public class Game_main {
 		}
 
 		// 게임 클리어 한 후 얻은 비밀번호 입력 받고 엔딩스토리 줄력
-		ge.theEnd();
 		bgm.stop(0);
+		ge.theEnd();
+		
 	}
 
 }
