@@ -49,7 +49,7 @@ public class QuizChoice {
 			if (answer.equals(qd.getAnswer())||answer.equals("escape")) {
 
 				System.out.println("비밀번호를 획득했습니다.");
-				System.out.println(p.getPw()[roomHint]);
+				System.out.println(p.getPw()[cnt]);
 				isAns = true;
 
 			} else {

@@ -1,6 +1,6 @@
 package View;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GameEnd {
@@ -8,24 +8,27 @@ public class GameEnd {
 	PwOfEscape pe = new PwOfEscape();
 	String password;
 	
-	boolean isRight = true;
+	boolean isRight = false;
 
 	public void theEnd() {
 		System.out.println("모든 힌트를 모았나? 그럼 한번 입력해보도록");
 		password = scan.next(); //비밀번호를 문자열로 입력받음
 
-		String[] array = password.split(""); //입력받은 문자열로 하나씩 자르기
-		ArrayList<Integer> answer = new ArrayList<>(); //입력받은 비밀번호 저장
-		for (int i = 0; i < array.length; i++) {
-			answer.add(Integer.parseInt(array[i]));
-		} // 자른 문자열 정수형로 변환 후 저장
-
-		for (int i = 0; i < answer.size(); i++) {
-			if (pe.getPw()[i] != answer.get(i)) {
-				isRight = false;
-				break;
-			}
-		} // for
+//		String[] array = password.split(""); //입력받은 문자열로 하나씩 자르기
+//		ArrayList<Integer> answer = new ArrayList<>(); //입력받은 비밀번호 저장
+//		for (int i = 0; i < array.length; i++) {
+//			answer.add(Integer.parseInt(array[i]));
+//		} // 자른 문자열 정수형로 변환 후 저장
+//
+//		for (int i = 0; i < answer.size(); i++) {
+//			if (pe.getPw()[i] != answer.get(i)) {
+//				isRight = false;
+//				break;
+//			}
+//		} // for
+		
+		String str = Arrays.toString(pe.pw).replaceAll("[^0-9]","");
+		if(str.equals(password)) isRight = true;
 		
 		//엔딩 스토리 출력
 		if(isRight) {
