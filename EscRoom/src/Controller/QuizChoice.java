@@ -23,12 +23,12 @@ public class QuizChoice {
 
 	public void Quiz(int cnt, int roomHint) {
 		ArrayList<MusicVO> playlist = new ArrayList<>();
-		playlist.add(new MusicVO("시작브금1", "BGM", "BGM\\방탈출BGM.mp3"));
-		playlist.add(new MusicVO("시작브금2", "BGM", "BGM\\011_키보드+타이핑.mp3"));
-		playlist.add(new MusicVO("시작브금3", "BGM", "BGM\\효과음3.mp3"));
-		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM\\11멜로디.mp3"));
-		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM\\015_띠링.mp3"));
-		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\107_왕왕왕와~~~~~.mp3"));
+		playlist.add(new MusicVO("시작브금1", "BGM", "BGM/방탈출BGM.mp3"));
+		playlist.add(new MusicVO("시작브금2", "BGM", "BGM/011_키보드+타이핑.mp3"));
+		playlist.add(new MusicVO("시작브금3", "BGM", "BGM/효과음3.mp3"));
+		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM/11멜로디.mp3"));
+		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM/015_띠링.mp3"));
+		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM/1107_왕왕왕와~~~~~.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		if (roomHint == 9 || roomHint == 14) {
 			int n = rd.nextInt(20) + 1;
