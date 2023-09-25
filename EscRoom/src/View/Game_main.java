@@ -116,7 +116,7 @@ public class Game_main {
 
 		// 게임 클리어 한 후 얻은 비밀번호 입력 받고 엔딩스토리 줄력
 		ge.theEnd();
-
+		bgm.stop(0);
 	}
 
 }
