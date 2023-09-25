@@ -725,7 +725,6 @@ public class GameFlow {
 			qc.Quiz(cnt,roomHint);
 			SelOfHint.remove(roomHint);
 			cnt++;
-			
 		}
 
 	} //하드모드 종료
