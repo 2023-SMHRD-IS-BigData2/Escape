@@ -37,7 +37,7 @@ public class MusicPlayer {
 		return m;
 	}
 	
-	public void stop() {
+	public void stop(int index) {
 		if(mp3Player.isPlaying()) {
 			mp3Player.stop();
 		}

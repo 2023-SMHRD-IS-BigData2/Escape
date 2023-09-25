@@ -34,13 +34,59 @@ public class Game_main {
 
 		// 게임 시작 선택 (Y/N)
 		// 시작용 화면 (Y- 방 화면 출력 , N-3번까지 받아주고 그 다음에는 강제 실행)
-		System.out.println("" + " _  _ _  ___  ___  ___ \r\n" + "| || \\ ||_ _|| . \\| . |\r\n"
-				+ "| ||    | | | |    /| | |\r\n" + "|_||_\\_| |_| |_\\_\\`__'\r\n" + "                       ");
-		System.out.println("월요일에 있을 미니 프로젝트를 앞두고 열심히 코드를 짜고있던 S.\n" + "화면에 집중하다보니 빽빽하던 강의실도 텅 비어버렸다.\n"
-				+ " 시간은 10시, 슬슬 집에 갈까 생각하면서 피곤한 눈을 깜빡이면….\n" + ".\n" + ".\n" + ".\n" + "'지금부터 게임을 시작하지.'\n"
-				+ "... ...이건 뭐야?! 내가 짰던 코드는 어디갔어???\n" + "장난 치지 말고 내 코드 당장 돌려줘요!!!\n");
+		String start1 = "" + " _  _ _  ___  ___  ___ \r\n" + "| || \\ ||_ _|| . \\| . |\r\n"
+				+ "| ||    | | | |    /| | |\r\n" + "|_||_\\_| |_| |_\\_\\`__'\r\n" + "                       ";
+		char[] arr1 = new char[start1.length()];
+		try {
+			for (int i = 0; i < start1.length(); i++) {
+				arr1[i] = start1.charAt(i);
+				System.out.print(arr1[i]);
+				Thread.sleep(1);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		bgm.play(1);
+		String start2 = "월요일에 있을 미니 프로젝트를 앞두고 열심히 코드를 짜고있던 S.\n" + "화면에 집중하다보니 빽빽하던 강의실도 텅 비어버렸다.\n"
+				+ " 시간은 10시, 슬슬 집에 갈까 생각하면서 피곤한 눈을 깜빡이면….\n";
+		char[] arr2 = new char[start2.length()];
+		try {
+			for (int i = 0; i < start2.length(); i++) {
+				arr2[i] = start2.charAt(i);
+				System.out.print(arr2[i]);
+				Thread.sleep(200);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		bgm.stop(1);
+		String start3 = ".\n" + ".\n" + ".\n";
+		char[] arr3 = new char[start3.length()];
+		try {
+			for (int i = 0; i < start3.length(); i++) {
+				arr3[i] = start3.charAt(i);
+				System.out.print(arr3[i]);
+				Thread.sleep(500);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		bgm.play(2);
+		String start4 = "'지금부터 게임을 시작하지.'\n"
+				+ "... ...이건 뭐야?! 내가 짰던 코드는 어디갔어???\n"
+				+ "장난 치지 말고 내 코드 당장 돌려줘요!!!\n";
 		// 인트로
-
+		char[] arr4 = new char[start4.length()];
+		try {
+			for (int i = 0; i < start4.length(); i++) {
+				arr4[i] = start4.charAt(i);
+				System.out.print(arr4[i]);
+				Thread.sleep(150);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		bgm.stop(2);
 		System.out.println("START?  (Y/N)");
 		gs.startSelect(); // 시작하면서 게임 화면 출력 + BGM
 
