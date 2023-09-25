@@ -30,8 +30,7 @@ public class QuizChoice {
 			int n = rd.nextInt(20) + 1;
 			qd = quiz.selectFouridioms(n);
 		} else if (roomHint == 1 || roomHint == 5 || roomHint == 11) {
-			int n = rd.nextInt(10) + 1;
-			qd = quiz.selectJava(n);
+			qd = quiz.selectJava(rd.nextInt());
 		} else if (roomHint == 4 || roomHint == 7 || roomHint == 12) {
 			int n = rd.nextInt(20) + 1;
 			qd = quiz.selectNonSense(n);
