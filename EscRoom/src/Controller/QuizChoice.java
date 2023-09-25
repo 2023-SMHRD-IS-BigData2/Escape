@@ -23,10 +23,16 @@ public class QuizChoice {
 		while (!isAns) {
 			System.out.println(quiz.selectAll(n).getQuiz()); // 퀴즈 불러오기
 			String answer = sc.next();
+<<<<<<< HEAD
 			if (answer.equals(quiz.selectAll(n).getAnswer()) || answer.equals("살려주세요")) {
 				System.out.println("훗..생각보다 똑똑한가 보군, 비밀번호 한자리 보여주지!!");
+=======
+			if (answer.equals(quiz.selectAll(n).getAnswer())||answer.equals("helpme")) {
+				System.out.println("비밀번호를 획득했습니다.");
+>>>>>>> branch 'master' of https://github.com/2023-SMHRD-IS-BigData2/Mini_Project_Team2
 				System.out.println(p.getPw()[roomHint]);
 				isAns = true;
+<<<<<<< HEAD
 			} else {
 				System.out.println("다시 생각해"); // 틀릴 경우 재시도
 			}
@@ -34,6 +40,12 @@ public class QuizChoice {
 	}
 	public void name() {
 		
+=======
+			}else {
+				System.out.println("재시도 해주십시오."); // 틀릴 경우 재시도
+			} 
+		}//while
+>>>>>>> branch 'master' of https://github.com/2023-SMHRD-IS-BigData2/Mini_Project_Team2
 	}
 
 }
