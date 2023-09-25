@@ -40,6 +40,7 @@ public class userLogin {
 			String inpPw = sc.next();
 			System.out.print("이름을 입력해 주세요 >> ");
 			String inpName = sc.next();
+			
 
 		ModelDTO dto = new ModelDTO(inpID, inpPw, inpName);
 			int row = mdao.getjoin(dto);
