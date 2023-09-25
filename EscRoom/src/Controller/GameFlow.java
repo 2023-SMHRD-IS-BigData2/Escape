@@ -212,7 +212,7 @@ public class GameFlow {
 				+"넓은 강의실에는 웅웅거리며 돌아가는 컴퓨터 소리만 난다.\n"
 				+"살펴볼 수 있을 것 같다.");
 		
-		for (int cnt = 0; cnt < 4;) {
+		for (int cnt = 0; cnt < 2;) {
 			System.out.println();
 			for (int i = 1; i < 5; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
@@ -308,7 +308,7 @@ public class GameFlow {
 		System.out.println("+++휴게실+++"); 
 
 	
-		for (int cnt = 3; cnt < 6;) {
+		for (int cnt = 3; cnt < 5;) {
 			System.out.println();
 			for (int i = 6; i < 9; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
@@ -347,7 +347,7 @@ public class GameFlow {
 		System.out.println(map3.getMap3A2());
 		System.out.println("+++3-A 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 		
-		for (int cnt = 4; cnt < 6;) {
+		for (int cnt = 5; cnt < 7;) {
 			System.out.println();
 			for (int i = 11; i < 14; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
@@ -593,7 +593,7 @@ public class GameFlow {
 		System.out.println(map3.getMap3A3());
 		System.out.println("+++3-A 강의실+++"); // 처음 입장하는 방 화면 또는 맵
 		
-		for (int cnt = 4; cnt < 6;) {
+		for (int cnt = 5; cnt < 8;) {
 			System.out.println();
 			for (int i = 11; i < 16; i++) {
 				System.out.printf("%3s  ", SelOfHint.get(i));
