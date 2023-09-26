@@ -56,7 +56,7 @@ public class GameFlow {
 		playlist.add(new MusicVO("시작브금3", "BGM", "BGM\\효과음3.mp3"));
 		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM\\11멜로디.mp3"));
 		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM\\015_띠링.mp3"));
-		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\107_왕왕왕와~~~~~.mp3"));
+		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\퀴즈오답.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		HashMap<Integer, String> SelOfHint = new HashMap<Integer, String>() {
 			{
@@ -242,7 +242,7 @@ public class GameFlow {
 		playlist.add(new MusicVO("시작브금3", "BGM", "BGM\\효과음3.mp3"));
 		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM\\11멜로디.mp3"));
 		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM\\015_띠링.mp3"));
-		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\107_왕왕왕와~~~~~.mp3"));
+		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\퀴즈오답.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		HashMap<Integer, String> SelOfHint = new HashMap<Integer, String>() {
 			{
@@ -540,7 +540,7 @@ public class GameFlow {
 		playlist.add(new MusicVO("시작브금3", "BGM", "BGM\\효과음3.mp3"));
 		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM\\11멜로디.mp3"));
 		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM\\015_띠링.mp3"));
-		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\107_왕왕왕와~~~~~.mp3"));
+		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\퀴즈오답.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 		HashMap<Integer, String> SelOfHint = new HashMap<Integer, String>() {
 			{
