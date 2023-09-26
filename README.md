@@ -1,5 +1,6 @@
 # Escape
 
+![image](https://github.com/2023-SMHRD-IS-BigData2/Escape/assets/145406223/8b3090ee-a394-4d82-95aa-88fb50fccee2)
 
 
 **개요**
