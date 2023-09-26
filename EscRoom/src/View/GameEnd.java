@@ -11,7 +11,10 @@ public class GameEnd {
 	boolean isRight = false;
 
 	public void theEnd() {
-		System.out.println("모든 힌트를 모았나? 그럼 한번 입력해보도록");
+		System.out.println("... ...\n"
+				+"삑. 삑. 삑. 삑.\n"
+				+"잠금장치에서 소리가 들린다.\n"
+				+"비밀번호를 입력해보자.\n");
 		password = scan.next(); //비밀번호를 문자열로 입력받음
 
 //		String[] array = password.split(""); //입력받은 문자열로 하나씩 자르기
@@ -49,8 +52,8 @@ public class GameEnd {
 					+"나를 도와준 C는 누구였을까?"
 					+"확실한 건 나 또한 나를 도운 C의 길을 걷게 될 거라는 거다."
 					+ " ___  _          ___         _ \r\n"
-					+ "|_ _|| |_  ___   | __>._ _  _| |\r\n"
-					+ " | | | . |/ ._>  | _> | ' |/ . |\r\n"
+					+ "|_ _|| |_  ___  | __>._ _  _| |\r\n"
+					+ " | | | . |/ ._> | _> | ' |/ . |\r\n"
 					+ " |_| |_|_|\\]___.|___>|_|_|\\__|\r\n\n\n\n\n\n\n\n\n\n\n"
 					+ "                               ");
 			

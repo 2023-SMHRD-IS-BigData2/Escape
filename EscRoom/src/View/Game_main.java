@@ -24,7 +24,7 @@ public class Game_main {
 		playlist.add(new MusicVO("시작브금3", "BGM", "BGM\\효과음3.mp3"));
 		playlist.add(new MusicVO("퀴즈출제", "BGM", "BGM\\11멜로디.mp3"));
 		playlist.add(new MusicVO("퀴즈정답", "BGM", "BGM\\015_띠링.mp3"));
-		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\107_왕왕왕와~~~~~.mp3"));
+		playlist.add(new MusicVO("퀴즈오답", "BGM", "BGM\\퀴즈오답.mp3"));
 		MusicPlayer bgm = new MusicPlayer(playlist);
 
 		// 게임 소개 화면 - 게임 로고 뿌리기 + bgm(선택사항)
@@ -35,7 +35,7 @@ public class Game_main {
 		// 게임 시작 선택 (Y/N)
 		// 시작용 화면 (Y- 방 화면 출력 , N-3번까지 받아주고 그 다음에는 강제 실행)
 		String start1 = "" + " _  _ _  ___  ___  ___ \r\n" + "| || \\ ||_ _|| . \\| . |\r\n"
-				+ "| ||    | | | |    /| | |\r\n" + "|_||_\\_| |_| |_\\_\\`__'\r\n" + "                       ";
+				+ "| ||    | | ||   /| | |\r\n" + "|_||_\\_| |_| |_\\_\\ `__'\r\n" + "                       ";
 		char[] arr1 = new char[start1.length()];
 		try {
 			for (int i = 0; i < start1.length(); i++) {
@@ -115,8 +115,9 @@ public class Game_main {
 		}
 
 		// 게임 클리어 한 후 얻은 비밀번호 입력 받고 엔딩스토리 줄력
-		ge.theEnd();
 		bgm.stop(0);
+		ge.theEnd();
+		
 	}
 
 }
